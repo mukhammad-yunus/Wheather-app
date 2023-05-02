@@ -1,0 +1,132 @@
+html, body{
+    margin: 0;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #f7f7f7;
+}
+h1{
+    margin: 2rem 0 1rem;
+    font-size: 3rem;
+}
+.container{
+    margin: 1rem 5%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    text-align: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+form {
+    margin-bottom: 1rem;
+}
+.city,
+.error-message{
+    font-size: 1.5rem;
+    text-align: left;
+    margin:1rem 0;
+}
+
+
+input[type="text"],
+input[type="submit"]{
+    font-size: 1.125rem;
+    outline: none;
+    border: none;
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+}
+input[type="text"]{
+    background-color: #e0e0e0;
+}
+input[type="submit"]{
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #0455ac;
+}
+.weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+    background-color: #007bff55;
+}
+img{
+    width: 70px;
+    position: relative;
+}
+.temperature{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    margin-left: -.5rem;
+}
+
+.description{
+    font-size: 1.5rem;
+    margin: 0 0 3rem;
+    background-color: #007bff55;
+    padding-bottom: 2rem;
+}
+
+div.flex-column > p{
+    margin: 0;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    font-size: 1.125rem;
+    border-radius: 0.5rem;
+}
+.bold{
+    font-weight: bold;
+}
+
+
+@media (min-width: 768px){
+    .container{
+        margin-top: 50px;
+    }
+    .flex-column{
+        flex-direction: row;
+        justify-content: center;
+    }
+    input[type="text"]{
+        width: 80%;
+        max-width: 600px;
+        /* padding: 1rem 1rem; */
+        font-size: 1.75rem;
+    }
+    input[type="submit"]{
+        font-size: 1.75rem;
+        width: 30%;
+        max-width: 200px;
+    }
+    div.flex-column{
+        justify-content: space-around;
+        gap: 1rem;
+    }
+    img{
+        width: 100px;
+    }
+    .temperature{
+        font-size: 3rem;
+    }
+    div.flex-column > p {
+        width: 33%;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+    .city,
+    .error-message{
+        margin-top: 1.5rem;
+    }
+}
